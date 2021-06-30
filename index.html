@@ -6,108 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hola mundo</title>
+    <title>Hola mundo</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-      <section>
-        <h1>Lista de la compra</h1>
-
-        <ul>
-          <li>Frutas</li>
-          <ol>
-            <li>
-              <a href="https://www.pequerecetas.com/receta/manzana-18-recetas/"  target="_blank" rel="noopener noreferrer">
-                Manzana
-              </a>
-            </li>
-            <li>
-              <a href="https://www.nestlecocina.es/ingredientes/recetas-con-pera" target="_blank" rel="noopener noreferrer">
-                Pera
-              </a>
-            </li>
-          </ol>
-
-          <li>Carnes</li>
-          <ol>
-            <li>
-              <a href="https://www.directoalpaladar.com/recetas-de-carnes-y-aves/entrana-a-plancha-sabroso-corte-argentino-que-te-encantara-descubrir-no-has-hecho"  target="_blank" rel="noopener noreferrer">
-                Entraña
-              </a>
-            </li>
-            <li>
-              <a href="https://www.recetasdeescandalo.com/secreto-iberico-de-cerdo-al-horno-con-patatas-asadas-y-cebolla-de-10/"  target="_blank" rel="noopener noreferrer">
-                Secreto Ibérico
-              </a>
-            </li>
-          </ol>
-        </ul>
-      </section>
-      <section>
-        <figure>
-            <img src="./pics/pequeña.jpg"
-            alt="Imagen de Caballo"
-            />
-            <figcaption>Caballo posando</figcaption>
+  <main>
+    <section>
+      <h1>Lista de la compra</h1>
+<!-- Listas anidadas -->
+      <ul>
+        <li>Frutas</li>
+        <ol>
+          <li>
+            <a href="https://www.pequerecetas.com/receta/manzana-18-recetas/"  target="_blank" rel="noopener noreferrer">
+              Manzana
+            </a>
+          </li>
+          <li>
+            <a href="https://www.nestlecocina.es/ingredientes/recetas-con-pera" target="_blank" rel="noopener noreferrer">
+              Pera
+            </a>
+          </li>
+        </ol>
+        <li>Carnes</li>
+        <ol>
+          <li>
+            <a href="https://www.directoalpaladar.com/recetas-de-carnes-y-aves/entrana-a-plancha-sabroso-corte-argentino-que-te-encantara-descubrir-no-has-hecho"  target="_blank" rel="noopener noreferrer">
+              Entraña
+            </a>
+          </li>
+          <li>
+            <a href="https://www.recetasdeescandalo.com/secreto-iberico-de-cerdo-al-horno-con-patatas-asadas-y-cebolla-de-10/"  target="_blank" rel="noopener noreferrer">
+              Secreto Ibérico
+            </a>
+          </li>
+        </ol>
+      </ul>
+    </section>
+    <section>
+      <!-- Imagenes -->
+      <figure>
+        <img src="./pics/pequeña.jpg"
+          alt="Imagen de Caballo"
+          />
+          <figcaption>Caballo posando</figcaption>
         </figure>
       </section>
       <section>
+        <!-- Video -->
         <video controls  preload="auto">
-         <source  src="./pics/mov/caballo.m4v#t=10,20">
-        </video>
-        
-      </section>
-    </main>
+        <source  src="./pics/mov/caballo.m4v#t=10,20">
+      </video>
+    </section>
+    <!-- Formulario -->
+    <form autocomplete="on">
+      <label for="nombre">
+        <span>¿Cual es tu nombre?</span>
+        <input type="text" name="nombre" id="nombre" autocomplete="on" required>
+      </label>
+      <label for="email">
+        <span>¿Cual es tu email?</span>
+        <input type="email" name="email" id="email" autocomplete="on" required>
+      </label>
+      <label for="pais">
+        <span>¿En que pais vives?</span>
+        <input type="text" name="pais" id="pais" autocomplete="on" required>
+      </label>
+      <label for="cp">
+        <span>¿Cual es tu codigo postal?</span>
+        <input type="cp" name="cp" id="cp" autocomplete="on" required>
+      </label>
+      <input type="submit">
+    </form>
     <footer>
-
     </footer>
-  </a>
- <form action="">
- <label for="Nombre">
-   <span>¿Cual es tu nombre?</span>
-   <input type="text" id="Nombre" placeholder="Tu nombre">
- </label>  
- <label for="Inicio-estudios">
-  <span>¿Cuando comenzaste a estudiar?</span>
-  <input type="date" id="Inicio-estudios">
-</label>  
-<label for="Horario">
-  <span>¿Cual es tu horario de estudio?</span>
-  <input type="time" id="Horario">
-</label>  
- </form>
-
- <!-- <form action="">
-  <label for="Hora">
-    <span>Hora</span>
-    <input type="time" id="Hora" name="Hora">
-  </label>
- </form>
- <form action="">
-  <label for="Dia">
-    <span>Día</span>
-    <input type="date" id="Dia" name="Dia">
-  </label>
- </form>
- <form action="">
-  <label for="Semana">
-    <span>Semana</span>
-    <input type="week" id="Semana" name="Semana">
-  </label>
- </form>
- <form action="">
-  <label for="Mes">
-    <span>Semana</span>
-    <input type="month" id="Mes" name="Mes">
-  </label>
-  <input type="submit">
- </form> -->
- <form action="">
-  <label for="Calendario">
-    <span>Calendario</span>
-     <input type="datetime-local" id="Calendario" name="Calendario"
-  </label>
-  <input type="submit" 
- </form>
+  </main>
 </body>
 </html>
