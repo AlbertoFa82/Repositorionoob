@@ -9,16 +9,16 @@
     <title>Hola mundo</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="fondo">
   <main>
     <section>
       <h1>Lista de la compra</h1>
 <!-- Listas anidadas -->
       <ul>
-        <li>Frutas</li>
+        <li class="parrafo">Frutas</li>
         <ol>
           <li>
-            <a href="https://www.pequerecetas.com/receta/manzana-18-recetas/"  target="_blank" rel="noopener noreferrer">
+            <a id="texto" href="https://www.pequerecetas.com/receta/manzana-18-recetas/"  target="_blank" rel="noopener noreferrer">
               Manzana
             </a>
           </li>
@@ -28,7 +28,7 @@
             </a>
           </li>
         </ol>
-        <li>Carnes</li>
+        <li class="parrafo2">Carnes</li>
         <ol>
           <li>
             <a href="https://www.directoalpaladar.com/recetas-de-carnes-y-aves/entrana-a-plancha-sabroso-corte-argentino-que-te-encantara-descubrir-no-has-hecho"  target="_blank" rel="noopener noreferrer">
@@ -46,7 +46,7 @@
     <section>
       <!-- Imagenes -->
       <figure>
-        <img src="./pics/pequeña.jpg"
+        <img class="img1" src="./pics/pequeña.jpg"
           alt="Imagen de Caballo"
           />
           <figcaption>Caballo posando</figcaption>
@@ -54,7 +54,7 @@
       </section>
       <section>
         <!-- Video -->
-        <video controls  preload="auto">
+        <video class="vid1" controls  preload="auto">
         <source  src="./pics/mov/caballo.m4v#t=10,20">
       </video>
     </section>
@@ -77,12 +77,13 @@
         <input type="cp" name="cp" id="cp" autocomplete="on" required>
       </label>
       <input type="submit">
-      <!-- Select malo -->
+      <!-- Formulario malo -->
       <select name="" id="">
         <option value="España">España</option>
         <option value="Francia">Francia</option>
         <option value="Marruecos">Marruecos</option>
       </select>
+      <!-- Formmulario facil -->
       <input list="paises">
       <datalist id="paises">
         <option value="España"></option>
