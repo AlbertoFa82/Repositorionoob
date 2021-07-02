@@ -2,28 +2,23 @@ h1{
     color:black;
     font-size: 40px;
     text-align: center;
-    text-transform:uppercase;
-    text-align:center;
-  background:#dfdfdf;
-}
-{
-  text-transform:uppercase;
-  font-size:72px;
-  font-family:'Verdana';
-  padding:30px;
+    text-transform:uppercases;
 }
 /* class */
 .parrafo{
     color: black;
-    font-size: 24px;
-}
-.parrafo2{
-    color: black;
-    font-size: 24px;
+    font-size: 27px;
+    text-decoration:underline;
 }
 /* id */
 #texto{
     color: saddlebrown;
+    text-decoration: none;
+    font-size: 20px;
+}
+#texto a:hover{
+    color: blue;
+
 }
 .fondo{
 background-color:rgb(254, 222, 61)
@@ -35,4 +30,28 @@ background-color:rgb(254, 222, 61)
 .vid1{
     border-radius: 15%;
     border-style: groove;
+}
+.main-nav{
+margin-top: 10px;
+list-style: none;
+padding-left: 0px;
+background-color:#f8c418;
+}
+.main-nav__item{
+display: inline-block;
+}
+.main-nav__item a{
+    color:black;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.main-nav__item a:hover{
+    color:rebeccapurple;
+}
+.main-nav__item a:active{
+    color:red ;
+}
+.main-nav__item a::after{
+    content: " | " ;
 }
