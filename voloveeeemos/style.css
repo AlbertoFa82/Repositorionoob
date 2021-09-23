@@ -71,8 +71,9 @@ time{
     color: #383d43
 }
 .img{
-    width: 100px;
+    width: 200px;
     margin: auto;
+    border-radius: 76px;
 }
 .link{
     color: black;
